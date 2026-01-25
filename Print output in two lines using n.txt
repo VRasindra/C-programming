@@ -1,0 +1,29 @@
+Print output in two lines using \n
+
+
+
+#include <stdio.h>
+
+
+
+int main() {
+
+    char word1[100]="Hello";
+
+    char word2[100]="World";
+
+    printf("%s\n%s\n",word1,word2);
+
+    char word3[100]="Good";
+
+    char word4[100]="Morning";
+
+    printf("%s\n%s\n",word3,word4);
+
+   
+
+    
+
+    
+
+    return 0;

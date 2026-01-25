@@ -1,0 +1,27 @@
+Subtract two variables
+
+#include <stdio.h>
+
+
+
+int main() {
+
+     int a=10;
+
+     int b=5;
+
+     int c=a-b;
+
+     int d=20;
+
+     int e=10;
+
+     int f=d-e;
+
+     printf("%d\n%d",c,f);
+
+     
+
+    return 0;
+
+}

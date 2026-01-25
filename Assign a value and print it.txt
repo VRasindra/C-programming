@@ -1,0 +1,23 @@
+ Assign a value and print it
+
+#include <stdio.h>
+
+
+
+int main() {
+
+    int a;
+
+    scanf("%d",&a);
+
+    printf("%d",a);
+
+    int b,c;
+
+    scanf("%d %d",&b,&c);
+
+    printf("%d %d",b,c);
+
+    return 0;
+
+}

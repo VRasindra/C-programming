@@ -1,0 +1,23 @@
+. Print a string along with a number
+
+#include <stdio.h>
+
+int main() {
+
+    int a;
+
+   scanf("%d",&a);
+
+   printf("Age : %d",a);
+
+   int b;
+
+   scanf("%d",&b);
+
+   printf("count : %d",b);
+
+
+    return 0;
+
+}
+

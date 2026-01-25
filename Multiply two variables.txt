@@ -1,0 +1,27 @@
+ Multiply two variables
+
+#include <stdio.h>
+
+
+
+int main() {
+
+     int a=4;
+
+     int b=5;
+
+     int c=a*b;
+
+     int d=10;
+
+     int e=5;
+
+     int f=d*e;
+
+     printf("%d\n%d",c,f);
+
+     
+
+    return 0;
+
+}

@@ -1,0 +1,17 @@
+Print the product of two integers using *.
+
+int main() {
+
+    int a,b,sum=0;
+
+    scanf("%d %d",&a,&b);
+
+    sum=a*b;
+
+    printf("%d %d",sum);
+
+    
+
+    return 0;
+
+}

@@ -1,0 +1,25 @@
+Print quotient and remainder of two integers.
+
+#include <stdio.h>
+
+
+
+int main() {
+
+    int a,b;
+
+    scanf("%d %d",&a,&b);
+
+    int c=a/b;
+
+    int d=a%b;
+
+    
+
+    printf("Quotient is %d\n",c);
+
+    printf("Remainder is %d",d);
+
+    return 0;
+
+}

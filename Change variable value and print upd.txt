@@ -1,0 +1,42 @@
+Change variable value and print updated value
+
+
+
+#include <stdio.h>
+
+
+
+int main() {
+
+     int a=10;
+
+     int b=5;
+
+     int c=a+b;
+
+     int d=5;
+
+     int total=c+d;
+
+     printf("%d\n",total);
+
+     
+
+     int e=50;
+
+     int f=25;
+
+     int g=e+f;
+
+     int h=25;
+
+     int total2=g+h;
+
+     printf("%d",total2);
+
+
+
+    return 0;
+
+}
+
