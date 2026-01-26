@@ -1,0 +1,23 @@
+ Voting Eligibility
+
+#include <stdio.h>
+
+int main() {
+
+    int Age;
+
+    scanf("%d",&Age);
+
+    if(Age>=18){
+
+        printf("%d Eligible for voting",Age);
+
+        }else{
+
+            printf("Not Eligible for voting");
+
+        }
+
+    return 0;
+
+}
