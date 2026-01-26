@@ -1,0 +1,23 @@
+ Valid Triangle (Angles)
+
+#include <stdio.h>
+
+int main() {
+
+    int a,b,c;
+
+    scanf("%d %d %d",&a,&b,&c);
+
+    if(a>0 && b>0 && c>0 &&(a+b+c==180)){
+
+        printf("%d valid triangle",a,b,c);
+
+        }else{
+
+            printf("not valid triangle");
+
+        }
+
+    return 0;
+
+}

@@ -1,0 +1,29 @@
+ Menu-Driven Program
+
+#include <stdio.h>
+
+int main() {
+
+    int a,b,c;
+
+    scanf("%d",&a);
+
+    scanf("%d %d",&b,&c);
+
+    if(a==1){
+
+        printf("sum=%d",b+c);
+
+    }else if (a==2){
+
+        printf("Difference=%d",b-c);
+
+    }else{
+
+        printf("Invalid sum");
+
+    }
+
+    return 0;
+
+}

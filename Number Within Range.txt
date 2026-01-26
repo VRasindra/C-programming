@@ -1,0 +1,23 @@
+ Number Within Range
+
+#include <stdio.h>
+
+int main() {
+
+    int a;
+
+    scanf("%d",&a);
+
+    if(a>=10 && a<=20){
+
+        printf("%d Number is within range ",a);
+
+        }else{
+
+            printf("Number is without range");
+
+        }
+
+    return 0;
+
+}

@@ -1,0 +1,27 @@
+ Type of Triangle
+
+#include <stdio.h>
+
+int main() {
+
+    int a,b,c;
+
+    scanf("%d %d %d",&a,&b,&c);
+
+    if(a==b && b==c){
+
+        printf("%d Equilater triangle",a,b,c);
+
+        }else if (a==b ||b==c ||a==c){
+
+            printf("%disosceles trinangle",a,b,c);
+
+        }else{
+
+            printf("scalene triangle");
+
+        }
+
+    return 0;
+
+}
