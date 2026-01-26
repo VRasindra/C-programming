@@ -1,0 +1,23 @@
+Divisible by 11
+
+#include <stdio.h>
+
+int main() {
+
+    int a;
+
+    scanf("%d",&a);
+
+    if(a%11==0){
+
+        printf("%d Divisible by 11",a);
+
+        }else{
+
+            printf("invalid number");
+
+        }
+
+    return 0;
+
+}
