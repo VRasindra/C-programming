@@ -1,0 +1,41 @@
+Online Delivery Charges
+
+#include<stdio.h>
+
+int main(){
+
+    int online;
+
+    scanf("%d",&online);
+
+    int delivery;
+
+    scanf("%d",&delivery);
+
+    switch(online){
+
+        case 1:
+
+        printf("Delivery:50");
+
+        break;
+
+        case 2:
+
+         if(delivery>=1000){
+
+             printf("Delivery:100");
+
+         }
+
+        else if(delivery>=1000){
+
+            printf("Delivery:Free");
+
+        }
+
+    } 
+
+    return 0;
+
+}

@@ -1,0 +1,42 @@
+Bank Interest Calculation
+
+#include<stdio.h>
+
+int main(){
+
+    int bank;
+
+    scanf("%d",&bank);
+
+    int cal;
+
+    scanf("%d",&cal);
+
+    switch(bank){
+
+        case 1:
+
+        printf("intrest:4%%");
+
+        break;
+
+        case 2:
+
+         if(cal<=3){
+
+             printf("intrest:3%%");
+
+         }
+
+        else if(cal>3){
+
+            printf("intrest:7%%");
+
+        }
+
+    } 
+
+    return 0;
+
+}
+

@@ -1,0 +1,103 @@
+Grading System Using Switch
+
+#include<stdio.h>
+
+int main(){
+
+    int main() {
+
+    int marks;
+
+    
+
+    printf("Enter marks: ");
+
+    scanf("%d", &marks);
+
+    
+
+    if (marks < 0 || marks > 100) {
+
+        printf("Invalid marks\n");
+
+        return 1;
+
+    }
+
+    
+
+    int grade_division = marks / 10;
+
+    
+
+    switch (grade_division) {
+
+        case 10:
+
+        case 9:
+
+            printf("Grade A\n");
+
+            break;
+
+        case 8:
+
+            printf("Grade B\n");
+
+            break;
+
+        case 7:
+
+            printf("Grade C\n");
+
+            break;
+
+        case 6:
+
+            printf("Grade D\n");
+
+            break;
+
+        case 5:
+
+            printf("Grade E\n");
+
+            break;
+
+        case 4:
+
+            if (marks >= 40) {
+
+                printf("Grade E\n");
+
+            } else {
+
+                printf("Supplementary\n");
+
+            }
+
+            break;
+
+        case 3:
+
+        case 2:
+
+        case 1:
+
+        case 0:
+
+            printf("Supplementary\n");
+
+            break;
+
+        default:
+
+            printf("Invalid marks\n");
+
+    }
+
+    }
+
+    return 0;
+
+}

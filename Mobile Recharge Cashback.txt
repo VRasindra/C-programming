@@ -1,0 +1,51 @@
+Mobile Recharge Cashback
+
+#include<stdio.h>
+
+int main(){
+
+    int mobile;
+
+    scanf("%d",&mobile);
+
+    int recharge;
+
+    scanf("%d",&recharge);
+
+    switch(mobile){
+
+        case 1:
+
+        if(mobile==11){
+
+            int cal=(199-20);
+
+            printf("pay: %d",cal);
+
+        }else{
+
+            printf("199");
+
+        }
+
+        break;
+
+        case 2:
+
+          if(mobile == 11){
+
+              int cal = (399-20);
+
+              printf("pay: %d",cal);
+
+          }else{
+
+              printf("399");
+
+          }
+
+}
+
+    return 0;
+
+}
