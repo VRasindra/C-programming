@@ -1,0 +1,23 @@
+Armstrong Number
+
+#include <stdio.h>
+#include <math.h>
+int main() {
+    int N, temp, digits = 0, sum = 0;
+    scanf("%d", &N);
+    temp = N;
+
+    for(; temp > 0; temp /= 10)
+        digits++;
+
+    temp = N;
+    for(; temp > 0; temp /= 10)
+        sum += pow(temp % 10, digits);
+
+    if(sum == N)
+        printf("Yes");
+    else
+        printf("No");
+
+    return 0;
+}
