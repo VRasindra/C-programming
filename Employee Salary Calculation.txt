@@ -1,0 +1,24 @@
+Employee Salary Calculation
+#include <stdio.h>
+
+int main() {
+    int a,employee;
+    int basesalary=0,bonus=0,totalsalary;
+    scanf("%d",&a);
+    scanf("%d",&employee);
+    switch(a){
+        case 1:
+        basesalary=50000;
+        break;
+        case 2:
+        basesalary=35000;
+        break;
+    }if(employee>=3){
+        bonus=employee*5000;
+    }
+    totalsalary=basesalary+bonus;
+    printf("Salary %d",totalsalary);
+    
+
+    return 0;
+}

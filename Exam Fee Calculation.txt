@@ -1,0 +1,24 @@
+Exam Fee Calculation
+#include <stdio.h>
+
+int main() {
+    int category;
+
+    scanf("%d", &category);
+
+    if (category >= 1 && category <= 3) {
+        switch (category) {
+            case 1: 
+               printf("Exam Fee ₹1200"); 
+            break;
+            case 2: 
+               printf("Exam Fee ₹800"); 
+            break;
+            case 3: 
+               printf("Exam Fee ₹500");
+          
+        }
+    }
+
+    return 0;
+}

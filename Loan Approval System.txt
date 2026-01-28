@@ -1,0 +1,26 @@
+Loan Approval System
+#include <stdio.h>
+int main() {
+    int loantype;
+    int creditscore;
+    scanf("%d",&loantype);
+    scanf("%d",&creditscore);
+    switch(loantype){
+        case 1:
+        if(creditscore >=700 ){
+            printf("Approved");
+        }else if (creditscore>=650){
+            printf("manual Review");
+        }else{
+            printf("Rejected");
+        }
+        break;
+        case 2:
+        if(creditscore >=700){
+            printf("Approve");
+        }else{
+            printf("Rejected");
+        }
+    }
+    return 0;
+}

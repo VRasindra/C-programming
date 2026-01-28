@@ -1,0 +1,24 @@
+College Hostel Fee
+#include <stdio.h>
+
+int main() {
+    int room;
+
+    scanf("%d", &room);
+
+    if (room >= 1 && room <= 3) {
+        switch (room) {
+            case 1:
+                printf("Hostel Fee ₹80000"); 
+            break;
+            case 2:
+                printf("Hostel Fee ₹60000");
+            break;
+            case 3: 
+                printf("Hostel Fee ₹45000"); 
+            break;
+        }
+    }
+
+    return 0;
+}

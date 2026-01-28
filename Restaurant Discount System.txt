@@ -1,0 +1,23 @@
+Restaurant Discount System
+#include <stdio.h>
+
+int main() {
+    int type, bill;
+
+    scanf("%d", &type);
+    scanf("%d", &bill);
+
+    if (type == 1 || type == 2) {
+        switch (type) {
+            case 1:
+                bill = bill - (bill * 5 / 100);
+                break;
+            case 2:
+                bill = bill - (bill * 15 / 100);
+                        }
+    }else{
+
+    printf("Pay %d", bill);\
+    }
+    return 0;
+}

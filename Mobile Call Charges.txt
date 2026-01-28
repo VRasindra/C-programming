@@ -1,0 +1,27 @@
+Mobile Call Charges
+#include <stdio.h>
+
+int main() {
+    int type, minutes, charge = 0;
+
+    scanf("%d", &type);
+    scanf("%d", &minutes);
+
+    if (type >= 1 && type <= 3) {
+        switch (type) {
+            case 1: 
+               charge = minutes * 1; 
+             break;
+            case 2: 
+               charge = minutes * 3; 
+             break;
+            case 3:
+               charge = minutes * 10; 
+             break;
+        }
+    }else{
+
+    printf("Call Charge %d", charge);
+   }
+    return 0;
+}

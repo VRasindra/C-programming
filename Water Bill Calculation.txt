@@ -1,0 +1,30 @@
+Water Bill Calculation
+
+#include <stdio.h>
+
+int main() {
+    int type, units, bill = 0;
+
+    scanf("%d", &type);
+    scanf("%d", &units);
+
+    if (type == 1 || type == 2) {
+        switch (type) {
+            case 1:
+                if (units <= 30){
+                    bill = units * 5;
+                }else{
+                    bill = 30 * 5 + (units - 30) * 8;
+                  }
+                break;
+
+            case 2:
+                bill = units * 10;
+                break;
+        }
+    }else{
+
+    printf("Bill %d", bill);
+   }
+    return 0;
+}

@@ -1,0 +1,26 @@
+Movie Ticket Pricing
+
+#include <stdio.h>
+
+int main() {
+    int seatType, showTime, price = 0;
+
+    scanf("%d", &seatType);
+    scanf("%d", &showTime);
+
+    if (seatType == 1 || seatType == 2) {
+        switch (seatType) {
+            case 1: 
+               price = 150; break;
+            case 2: 
+               price = 250; break;
+        }
+    }
+
+    if (showTime >= 18){
+        price = price + 50;
+        }else{
+    printf("Ticket Price %d", price);
+   }
+    return 0;
+}
