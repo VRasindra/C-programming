@@ -1,0 +1,20 @@
+14 Bank ATM Cash Depletion Tracker (While Loop)
+#include <stdio.h>
+int main() {
+    int cash, n, i = 0, x, success = 0;
+
+    scanf("%d", &cash);
+    scanf("%d", &n);
+
+    while (i < n) {
+        scanf("%d", &x);
+        if (cash < x)
+            break;
+        cash -= x;
+        success++;
+        i++;
+    }
+    printf("Successful Withdrawals: %d\n", success);
+    printf("Remaining Cash: %d", cash);
+    return 0;
+}

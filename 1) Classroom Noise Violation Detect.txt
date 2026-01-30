@@ -1,0 +1,23 @@
+1) Classroom Noise Violation Detector (While Loop)
+#include <stdio.h>
+int main() {
+    int n, i = 0, x;
+    int violations = 0, streak = 0, maxStreak = 0;
+
+    scanf("%d", &n);
+    while (i < n) {
+        scanf("%d", &x);
+        if (x > 70) {
+            violations++;
+            streak++;
+            if (streak > maxStreak)
+                maxStreak = streak;
+        } else {
+            streak = 0;
+        }
+        i++;
+    }
+    printf("Noise Violations: %d\n", violations);
+    printf("Longest Violation Streak: %d", maxStreak);
+    return 0;
+}

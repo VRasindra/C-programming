@@ -1,0 +1,18 @@
+5 Online Order Cancellation Risk Monitor (While Loop)
+#include <stdio.h>
+int main() {
+    int n, i = 0, x;
+    int success = 0, cancel = 0;
+
+    scanf("%d", &n);
+    while (i < n) {
+        scanf("%d", &x);
+        if (x == 1) success++;
+        else cancel++;
+        i++;
+    }
+    printf("Successful: %d\n", success);
+    printf("Cancelled: %d\n", cancel);
+    printf("Status: %s", cancel > success ? "Risk" : "Safe");
+    return 0;
+}

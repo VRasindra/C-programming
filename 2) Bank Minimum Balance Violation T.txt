@@ -1,0 +1,20 @@
+2) Bank Minimum Balance Violation Tracker (While Loop)
+#include <stdio.h>
+int main() {
+    int n, i = 0, lowDays = 0;
+    int balance, x;
+
+    scanf("%d", &n);
+    scanf("%d", &balance);
+
+    while (i < n) {
+        scanf("%d", &x);
+        balance += x;
+        if (balance < 2000)
+            lowDays++;
+        i++;
+    }
+    printf("Final Balance: %d\n", balance);
+    printf("Low Balance Days: %d", lowDays);
+    return 0;
+}

@@ -1,0 +1,20 @@
+3 Mobile Data Limit Exhaustion Checker (While Loop)
+#include <stdio.h>
+int main() {
+    int data, n, i = 0, usedDays = 0, x;
+
+    scanf("%d", &data);
+    scanf("%d", &n);
+
+    while (i < n && data > 0) {
+        scanf("%d", &x);
+        data -= x;
+        usedDays++;
+        i++;
+    }
+    if (data < 0) data = 0;
+
+    printf("Days Used: %d\n", usedDays);
+    printf("Remaining Data: %dGB", data);
+    return 0;
+}
