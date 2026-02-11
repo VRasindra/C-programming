@@ -1,0 +1,16 @@
+1 Username Character Counter
+#include <stdio.h>
+
+int main() {
+    char s[100];
+    int count = 0;
+
+    scanf("%s", s);
+
+    while (s[count] != '\0') {
+        count++;
+    }
+
+    printf("%d", count);
+    return 0;
+}
