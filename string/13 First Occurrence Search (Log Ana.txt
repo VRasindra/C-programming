@@ -1,0 +1,19 @@
+13 First Occurrence Search (Log Analyzer)
+#include <stdio.h>
+
+int main() {
+    char s[100], ch;
+    int i, pos = -1;
+
+    scanf("%s %c", s, &ch);
+
+    for (i = 0; s[i] != '\0'; i++) {
+        if (s[i] == ch) {
+            pos = i;
+            break;
+        }
+    }
+
+    printf("%d", pos);
+    return 0;
+}
