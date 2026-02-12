@@ -1,0 +1,18 @@
+11 Count Digits in a Number Using Function
+#include <stdio.h>
+
+int countDigits(int n) {
+    int count = 0;
+    while (n != 0) {
+        count++;
+        n /= 10;
+    }
+    return count;
+}
+
+int main() {
+    int N;
+    scanf("%d", &N);
+    printf("%d", countDigits(N));
+    return 0;
+}
