@@ -1,0 +1,16 @@
+4: Copy String Using Pointers ( )
+#include <stdio.h>
+int main() {
+    char str1[101], str2[101];
+    char *src = str1;
+    char *dest = str2;
+    fgets(str1, sizeof(str1), stdin);
+    while (*src != '\0') {
+        *dest = *src;
+        src++;
+        dest++;
+    }
+    *dest = '\0';
+    printf("%s", str2);
+    return 0;
+}
