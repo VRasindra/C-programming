@@ -1,0 +1,24 @@
+13 Count Palindromic Department Records
+#include <stdio.h>
+
+int main(){
+    int R,C,count=0;
+    scanf("%d %d",&R,&C);
+    int a[R][C];
+
+    for(int i=0;i<R;i++)
+        for(int j=0;j<C;j++)
+            scanf("%d",&a[i][j]);
+
+    for(int i=0;i<R;i++){
+        int flag = 1;
+        for(int j=0;j<C/2;j++){
+            if(a[i][j]!=a[i][C-1-j]){
+                flag=0; break;
+            }
+        }
+        if(flag) count++;
+    }
+    printf("%d", count);
+return 0;
+}
