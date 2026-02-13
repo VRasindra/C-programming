@@ -1,0 +1,16 @@
+14. Smallest Positive Number
+#include <stdio.h>
+#include <limits.h>
+int main() {
+    int n,a[100],min=INT_MAX;
+    scanf("%d",&n);
+    for(int i=0;i<n;i++){
+        scanf("%d",&a[i]);
+        if(a[i]>0 && a[i]<min)
+            min=a[i];
+    }
+
+    if(min==INT_MAX) printf("No positive");
+    else printf("%d",min);
+    return 0;
+}

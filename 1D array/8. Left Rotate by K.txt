@@ -1,0 +1,17 @@
+8. Left Rotate by K
+#include <stdio.h>
+int main() {
+    int n,k,a[100],temp[100];
+    scanf("%d",&n);
+    for(int i=0;i<n;i++) scanf("%d",&a[i]);
+    scanf("%d",&k);
+
+    int idx=0;
+    for(int i=k;i<n;i++) temp[idx++]=a[i];
+    for(int i=0;i<k;i++) temp[idx++]=a[i];
+
+    for(int i=0;i<n;i++) printf("%d ",temp[i]);
+return 0;
+
+
+}

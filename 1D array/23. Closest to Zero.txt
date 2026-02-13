@@ -1,0 +1,18 @@
+23. Closest to Zero
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+    int n,a[100];
+    scanf("%d",&n);
+    for(int i=0;i<n;i++) scanf("%d",&a[i]);
+
+    int res=a[0];
+    for(int i=1;i<n;i++){
+        if(abs(a[i]) < abs(res) ||
+           (abs(a[i])==abs(res) && a[i]>res))
+            res=a[i];
+    }
+    printf("%d",res);
+return 0;
+}
+
