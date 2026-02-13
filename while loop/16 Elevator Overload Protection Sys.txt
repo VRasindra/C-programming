@@ -1,0 +1,21 @@
+16 Elevator Overload Protection System (While Loop)
+#include <stdio.h>
+int main() {
+    int maxW, n, i = 0, x;
+    int sum = 0, count = 0;
+
+    scanf("%d", &maxW);
+    scanf("%d", &n);
+
+    while (i < n) {
+        scanf("%d", &x);
+        if (sum + x > maxW)
+            break;
+        sum += x;
+        count++;
+        i++;
+    }
+    printf("People Entered: %d\n", count);
+    printf("Overload Status: %s", i < n ? "Yes" : "No");
+    return 0;
+}

@@ -1,0 +1,29 @@
+25 Credit Card Fraud Burst Detector (While Loop)
+#include <stdio.h>
+int main() {
+    int n, i = 0, x;
+    int high = 0, streak = 0;
+    int fraudAt = -1;
+
+    scanf("%d", &n);
+    while (i < n) {
+        scanf("%d", &x);
+        if (x >= 50000) {
+            high++;
+            streak++;
+            if (streak == 3 && fraudAt == -1)
+                fraudAt = i + 1;
+        } else {
+            streak = 0;
+        }
+        i++;
+    }
+
+    if (fraudAt == -1)
+        printf("Fraud Triggered At Attempt: Not Triggered\n");
+    else
+        printf("Fraud Triggered At Attempt: %d\n", fraudAt);
+
+    printf("High-Value Transactions: %d", high);
+    return 0;
+}

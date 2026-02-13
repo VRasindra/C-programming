@@ -1,0 +1,18 @@
+11 Warehouse Shipment Delay Detector (While Loop)
+#include <stdio.h>
+int main() {
+    int n, i = 0, x;
+    int totalDelay = 0, delayedDays = 0;
+
+    scanf("%d", &n);
+    while (i < n) {
+        scanf("%d", &x);
+        totalDelay += x;
+        if (x > 2)
+            delayedDays++;
+        i++;
+    }
+    printf("Total Delay: %d\n", totalDelay);
+    printf("Delayed Days: %d", delayedDays);
+    return 0;
+}

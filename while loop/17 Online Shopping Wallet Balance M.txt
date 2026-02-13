@@ -1,0 +1,21 @@
+17 Online Shopping Wallet Balance Monitor (While Loop)
+#include <stdio.h>
+int main() {
+    int balance, n, i = 0, x;
+    int success = 0;
+
+    scanf("%d", &balance);
+    scanf("%d", &n);
+
+    while (i < n) {
+        scanf("%d", &x);
+        if (balance < x)
+            break;
+        balance -= x;
+        success++;
+        i++;
+    }
+    printf("Successful Purchases: %d\n", success);
+    printf("Final Balance: %d", balance);
+    return 0;
+}

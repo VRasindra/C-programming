@@ -1,0 +1,30 @@
+24 Spacecraft Fuel Burn Emergency System (While Loop)	
+#include <stdio.h>
+int main() {
+    int fuel, n, i = 0, x;
+    int emergency = -1;
+
+    scanf("%d", &fuel);
+    scanf("%d", &n);
+
+    while (i < n) {
+        scanf("%d", &x);
+        fuel -= x;
+        if (fuel < 0) {
+            emergency = i + 1;
+            break;
+        }
+        i++;
+    }
+
+
+
+    if (emergency == -1) {
+        printf("Emergency Stage: Not Occurred\n");
+        printf("Fuel Wasted: 0");
+    } else {
+        printf("Emergency Stage: %d\n", emergency);
+        printf("Fuel Wasted: %d", -fuel);
+    }
+    return 0;
+}
