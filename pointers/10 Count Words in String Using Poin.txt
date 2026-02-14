@@ -1,0 +1,17 @@
+10: Count Words in String Using Pointers
+#include <stdio.h>
+int main() {
+    char str[201];
+    char *ptr = str;
+    int count = 1;
+    fgets(str, sizeof(str), stdin);
+
+    while (*ptr != '\0') {
+        if (*ptr == ' ') {
+            count++;
+        }
+        ptr++;
+    }
+    printf("%d", count);
+    return 0;
+}
