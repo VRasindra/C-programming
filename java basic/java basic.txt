@@ -1,0 +1,16 @@
+2 Mobile Data Plan Billing
+import java.util.Scanner;
+public class MobileBill {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double baseCost = sc.nextDouble();
+        double extraGB = sc.nextDouble();
+        double ratePerGB = sc.nextDouble();
+        double taxPercent = sc.nextDouble();
+
+        double total = baseCost + (extraGB * ratePerGB);
+        double finalBill = total + (total * taxPercent / 100);
+
+        System.out.println("Total Bill = " + finalBill);
+    }
+}
