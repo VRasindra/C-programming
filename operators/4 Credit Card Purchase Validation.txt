@@ -1,0 +1,16 @@
+4 Credit Card Purchase Validation
+import java.util.Scanner;
+
+public class CreditCardValidation {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int creditLimit = sc.nextInt();
+        int purchase = sc.nextInt();
+        int cardBlocked = sc.nextInt();
+
+        if (purchase <= creditLimit && cardBlocked == 0)
+            System.out.println("Approved");
+        else
+            System.out.println("Declined");
+    }
+}
