@@ -1,0 +1,16 @@
+9 System Login Authentication	
+import java.util.Scanner;
+
+public class LoginAuthentication {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int userMatch = sc.nextInt();
+        int passMatch = sc.nextInt();
+        int accountLocked = sc.nextInt();
+
+        if (userMatch == 1 && passMatch == 1 && ! (accountLocked == 1))
+            System.out.println("Login Success");
+        else
+            System.out.println("Login Failed");
+    }
+}
