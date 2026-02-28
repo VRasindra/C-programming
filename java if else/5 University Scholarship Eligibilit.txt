@@ -1,4 +1,4 @@
-5 University Scholarship Eligibility System
+//5 University Scholarship Eligibility System
 import java.util.Scanner;
 
 public class ScholarshipEligibilitySystem {
@@ -77,4 +77,5 @@ public class ScholarshipEligibilitySystem {
 
         sc.close();
     }
+
 }
