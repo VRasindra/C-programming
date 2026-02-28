@@ -1,6 +1,5 @@
-11 Restaurant Order Priority and Pricing System
+//11 Restaurant Order Priority and Pricing System
 import java.util.Scanner;
-
 public class RestaurantOrderSystem {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -17,7 +16,6 @@ public class RestaurantOrderSystem {
         String priority = "";
         int prepTime = 0;
 
-        // Base Discount
         if (loyaltyStatus.equals("Gold"))
             baseDiscount = 15;
         else if (loyaltyStatus.equals("Silver"))
@@ -27,7 +25,6 @@ public class RestaurantOrderSystem {
         else
             baseDiscount = 0;
 
-        // Time Adjustment
         if (timeSlot.equals("Late-Night"))
             timeAdjustment = -5;
         else
@@ -35,7 +32,6 @@ public class RestaurantOrderSystem {
 
         int totalDiscount = baseDiscount + timeAdjustment;
 
-        // Service Fee
         if (orderType.equals("Delivery"))
             serviceFee = orderValue * 0.10;
         else if (orderType.equals("Takeout"))
@@ -46,7 +42,6 @@ public class RestaurantOrderSystem {
         double discountedValue = orderValue * (1 - totalDiscount / 100.0);
         double finalAmount = discountedValue + serviceFee;
 
-        // Priority
         if (timeSlot.equals("Peak") && orderType.equals("Delivery"))
             priority = "High";
         else if (timeSlot.equals("Regular"))
@@ -54,7 +49,6 @@ public class RestaurantOrderSystem {
         else
             priority = "Low";
 
-        // Prep Time
         if (priority.equals("High"))
             prepTime = (orderValue > 80) ? 25 : 30;
         else if (priority.equals("Medium"))
@@ -73,4 +67,5 @@ public class RestaurantOrderSystem {
         System.out.println("Kitchen Priority: " + priority);
         System.out.println("Estimated Prep Time: " + prepTime + " minutes");
     }
+
 }
