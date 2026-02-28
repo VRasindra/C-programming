@@ -1,4 +1,4 @@
-9 Corporate Tax Bracket Calculator
+//9 Corporate Tax Bracket Calculator
 import java.util.Scanner;
 
 public class CorporateTaxCalculator {
@@ -51,4 +51,5 @@ public class CorporateTaxCalculator {
 
         sc.close();
     }
+
 }
