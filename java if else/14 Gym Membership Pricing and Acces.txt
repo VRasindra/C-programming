@@ -1,6 +1,5 @@
-14 Gym Membership Pricing and Access System
+//14 Gym Membership Pricing and Access System
 import java.util.Scanner;
-
 public class GymMembershipCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -16,7 +15,7 @@ public class GymMembershipCalculator {
         double accessFee = 0;
         double addOnFee = 0;
 
-               if (tier.equals("Basic")) baseFee = 40;
+        if (tier.equals("Basic")) baseFee = 40;
         else if (tier.equals("Premium")) baseFee = 80;
         else if (tier.equals("Elite")) baseFee = 120;
         else baseFee = 150;
@@ -26,11 +25,11 @@ public class GymMembershipCalculator {
         else if (months == 24) discount = 25;
         else discount = 0;
 
-               if (access.equals("Regional")) accessFee = 20;
+        if (access.equals("Regional")) accessFee = 20;
         else if (access.equals("Nationwide")) accessFee = 50;
         else accessFee = 0;
 
-                if (addOns.equals("Personal-Training")) addOnFee = 100;
+        if (addOns.equals("Personal-Training")) addOnFee = 100;
         else if (addOns.equals("Classes")) addOnFee = 50;
         else if (addOns.equals("Full-Package")) addOnFee = 200;
         else addOnFee = 0;
@@ -61,4 +60,5 @@ public class GymMembershipCalculator {
         System.out.println("Savings vs Month-to-Month: $" + savings);
         System.out.println("Membership Category: " + category);
     }
+
 }
