@@ -1,6 +1,5 @@
-20  Cloud Storage Subscription Calculator
+//20  Cloud Storage Subscription Calculator
 import java.util.Scanner;
-
 public class CloudStorageCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -13,7 +12,6 @@ public class CloudStorageCalculator {
 
         double baseCost = 0;
 
-        
         if (storage <= 100)
             baseCost = storage * 0.05;
         else if (storage <= 500)
@@ -69,4 +67,5 @@ public class CloudStorageCalculator {
         System.out.println("Recommended Plan: " + plan);
         System.out.println("Included Features: " + features);
     }
+
 }
