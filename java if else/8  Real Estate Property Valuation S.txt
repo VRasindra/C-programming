@@ -1,6 +1,5 @@
-8  Real Estate Property Valuation System
+//8  Real Estate Property Valuation System
 import java.util.Scanner;
-
 public class PropertyValuationSystem {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -55,4 +54,5 @@ public class PropertyValuationSystem {
 
         sc.close();
     }
+
 }
