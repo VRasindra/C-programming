@@ -1,6 +1,5 @@
-22 Electricity Bill Calculator with Tiered Pricing
+//22 Electricity Bill Calculator with Tiered Pricing
 import java.util.Scanner;
-
 public class ElectricityBillCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -60,4 +59,5 @@ public class ElectricityBillCalculator {
         System.out.printf("Total Bill: $%.2f\n", total);
         System.out.printf("Average Rate: $%.2f/kWh\n", avg);
     }
+
 }
