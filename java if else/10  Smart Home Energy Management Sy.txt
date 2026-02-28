@@ -1,6 +1,5 @@
-10  Smart Home Energy Management System
+//10  Smart Home Energy Management System
 import java.util.Scanner;
-
 public class SmartHomeEnergySystem {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -57,4 +56,5 @@ public class SmartHomeEnergySystem {
 
         sc.close();
     }
+
 }
