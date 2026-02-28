@@ -1,4 +1,4 @@
-6 Airline Ticket Dynamic Pricing System
+//6 Airline Ticket Dynamic Pricing System
 import java.util.Scanner;
 
 public class AirlineDynamicPricing {
@@ -57,4 +57,5 @@ public class AirlineDynamicPricing {
 
         sc.close();
     }
+
 }
