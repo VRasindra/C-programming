@@ -1,4 +1,4 @@
-4 E-Commerce Dynamic Discount System
+//4 E-Commerce Dynamic Discount System
 import java.util.Scanner;
 
 public class EcommerceDiscountSystem {
@@ -48,4 +48,5 @@ public class EcommerceDiscountSystem {
 
         sc.close();
     }
+
 }
