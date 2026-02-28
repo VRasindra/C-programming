@@ -1,6 +1,5 @@
-17  Credit Card Reward Points Calculator
+//17  Credit Card Reward Points Calculator
 import java.util.Scanner;
-
 public class CreditCardRewards {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -52,4 +51,5 @@ public class CreditCardRewards {
         System.out.println("Equivalent Cash Value: $" + cashValue);
         System.out.println("Rewards Tier: " + rewardsTier);
     }
+
 }
