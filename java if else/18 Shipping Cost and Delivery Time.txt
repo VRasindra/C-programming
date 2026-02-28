@@ -1,6 +1,5 @@
-18 Shipping Cost and Delivery Time Calculator
+//18 Shipping Cost and Delivery Time Calculator
 import java.util.Scanner;
-
 public class ShippingCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -61,4 +60,5 @@ public class ShippingCalculator {
         System.out.println("Estimated Delivery: " + deliveryDays + " business days");
         System.out.println("Service Level: " + serviceLevel);
     }
+
 }
