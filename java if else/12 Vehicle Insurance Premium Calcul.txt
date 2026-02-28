@@ -1,6 +1,5 @@
-12 Vehicle Insurance Premium Calculator
+//12 Vehicle Insurance Premium Calculator
 import java.util.Scanner;
-
 public class InsuranceCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -16,14 +15,14 @@ public class InsuranceCalculator {
         double vehicleFactor = 1.0;
         int recordAdjustment = 0;
 
-                if (coverage.equals("Basic"))
+         if (coverage.equals("Basic"))
             basePremium = 500;
         else if (coverage.equals("Standard"))
             basePremium = 800;
         else
             basePremium = 1500;
 
-               if (age <= 21)
+        if (age <= 21)
             ageFactor = 1.8;
         else if (age <= 25)
             ageFactor = 1.5;
@@ -44,7 +43,7 @@ public class InsuranceCalculator {
         else
             vehicleFactor = 1.1;
 
-                if (record.equals("Clean"))
+        if (record.equals("Clean"))
             recordAdjustment = -10;
         else if (record.equals("Minor-Violations"))
             recordAdjustment = 25;
@@ -77,4 +76,5 @@ public class InsuranceCalculator {
         System.out.println("Annual Premium: $" + Math.round(finalPremium * 100.0) / 100.0);
         System.out.println("Risk Category: " + risk);
     }
+
 }
