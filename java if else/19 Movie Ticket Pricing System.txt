@@ -1,6 +1,5 @@
-19 Movie Ticket Pricing System
+//19 Movie Ticket Pricing System
 import java.util.Scanner;
-
 public class MovieTicketPricing {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -60,4 +59,5 @@ public class MovieTicketPricing {
         System.out.println("Concession Voucher: " + voucher);
         System.out.println("Pricing Category: " + category);
     }
+
 }
