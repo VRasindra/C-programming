@@ -1,6 +1,5 @@
-21 Parking Fee Calculator System
+//21 Parking Fee Calculator System
 import java.util.Scanner;
-
 public class ParkingFeeCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -17,7 +16,6 @@ public class ParkingFeeCalculator {
         double membershipDiscount = 0;
         double dailyCap = Double.MAX_VALUE;
 
-        
         if(zone.equals("Downtown")) {
             zonePremium = 50;
             dailyCap = 150;
@@ -39,7 +37,6 @@ public class ParkingFeeCalculator {
         else if(vehicle.equals("SUV")) vehicleSurcharge = 3;
         else if(vehicle.equals("Oversized")) vehicleSurcharge = 5;
 
-        
         if(membership.equals("Monthly")) membershipDiscount = 20;
         else if(membership.equals("Annual")) membershipDiscount = 25;
         else if(membership.equals("VIP")) membershipDiscount = 30;
@@ -74,4 +71,5 @@ public class ParkingFeeCalculator {
         System.out.println("Daily Cap Applied: " + (capApplied ? "Yes" : "No"));
         System.out.println("Rate Category: " + category);
     }
+
 }
