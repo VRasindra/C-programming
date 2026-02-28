@@ -1,4 +1,4 @@
-2 Bank Loan Approval System
+//2 Bank Loan Approval System
 import java.util.Scanner;
 
 public class LoanApprovalSystem {
@@ -64,4 +64,5 @@ public class LoanApprovalSystem {
 
         sc.close();
     }
+
 }
