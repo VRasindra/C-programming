@@ -1,4 +1,4 @@
-3 Healthcare Insurance Premium Calculator
+//3 Healthcare Insurance Premium Calculator
 import java.util.Scanner;
 
 public class InsurancePremiumCalculator {
@@ -54,4 +54,5 @@ public class InsurancePremiumCalculator {
 
         sc.close();
     }
+
 }
