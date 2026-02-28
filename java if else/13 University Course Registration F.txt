@@ -1,6 +1,5 @@
-13 University Course Registration Fee Calculator
+//13 University Course Registration Fee Calculator
 import java.util.Scanner;
-
 public class UniversityFeeCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -16,7 +15,7 @@ public class UniversityFeeCalculator {
         double programFee = 0;
         double activityFee = 0;
 
-                if (program.equals("Undergraduate"))
+        if (program.equals("Undergraduate"))
             baseTuition = 350;
         else if (program.equals("Graduate"))
             baseTuition = 550;
@@ -31,7 +30,7 @@ public class UniversityFeeCalculator {
         else
             multiplier = 3.0;
 
-               if (status.equals("Full-Time")) {
+            if (status.equals("Full-Time")) {
             if (program.equals("Undergraduate")) programFee = 500;
             else if (program.equals("Graduate")) programFee = 750;
             else programFee = 1200;
@@ -68,4 +67,5 @@ public class UniversityFeeCalculator {
         System.out.println("Total Registration Fee: $" + total);
         System.out.println("Fee Category: " + category);
     }
+
 }
