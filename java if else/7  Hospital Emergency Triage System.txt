@@ -1,7 +1,5 @@
-7 : Hospital Emergency Triage System
-
+//7  Hospital Emergency Triage System
 import java.util.Scanner;
-
 public class HospitalTriageSystem {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -63,4 +61,5 @@ public class HospitalTriageSystem {
 
         sc.close();
     }
+
 }
