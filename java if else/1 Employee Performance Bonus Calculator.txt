@@ -3,13 +3,11 @@ import java.util.Scanner;
 public class EmployeeBonusCalculator {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         int performanceRating = sc.nextInt();
         int yearsOfService = sc.nextInt();
         sc.nextLine();
         String departmentType = sc.nextLine();
         double baseSalary = sc.nextDouble();
-
         double bonusPercentage = 0;
         String status = "Not Eligible";
 
@@ -39,7 +37,6 @@ public class EmployeeBonusCalculator {
                 }
             }
         }
-
         double bonusAmount = baseSalary * (bonusPercentage / 100);
 
         System.out.println("Performance Rating: " + performanceRating);
@@ -51,4 +48,5 @@ public class EmployeeBonusCalculator {
 
         sc.close();
     }
+
 }
