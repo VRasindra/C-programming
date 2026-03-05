@@ -1,6 +1,5 @@
 21 Apartment Maintenance Collection
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -10,9 +9,8 @@ public class Main {
         int security = sc.nextInt();
         int electricity = sc.nextInt();
         int cleaning = sc.nextInt();
-
         int balance = maintenance + parking + hall - security - electricity - cleaning;
-
         System.out.println("Remaining Balance = " + balance);
     }
 }
+
