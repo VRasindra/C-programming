@@ -1,6 +1,5 @@
 24 Sports Tournament Prize Fund
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -10,9 +9,8 @@ public class Main {
         int prize = sc.nextInt();
         int rent = sc.nextInt();
         int advertising = sc.nextInt();
-
         int remaining = registration + broadcast + sponsor - prize - rent - advertising;
-
         System.out.println("Remaining Tournament Fund = " + remaining);
     }
 }
+
