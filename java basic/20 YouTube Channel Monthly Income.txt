@@ -1,6 +1,5 @@
 20 YouTube Channel Monthly Income	
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -9,9 +8,8 @@ public class Main {
         int affiliate = sc.nextInt();
         int tax = sc.nextInt();
         int production = sc.nextInt();
-
         int income = ads + sponsor + affiliate - tax - production;
-
         System.out.println("Final YouTube Income = " + income);
     }
 }
+
