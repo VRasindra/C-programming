@@ -9,8 +9,8 @@ int main() {
         if(a[i]>0 && a[i]<min)
             min=a[i];
     }
-
     if(min==INT_MAX) printf("No positive");
     else printf("%d",min);
     return 0;
 }
+
