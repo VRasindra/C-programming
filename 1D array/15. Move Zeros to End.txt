@@ -4,12 +4,10 @@ int main() {
     int n,a[100],idx=0;
     scanf("%d",&n);
     for(int i=0;i<n;i++) scanf("%d",&a[i]);
-
     for(int i=0;i<n;i++)
         if(a[i]!=0) a[idx++]=a[i];
-
     while(idx<n) a[idx++]=0;
-
     for(int i=0;i<n;i++) printf("%d ",a[i]);
    return 0;
 }
+
