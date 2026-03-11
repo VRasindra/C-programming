@@ -29,5 +29,5 @@ public class EmployeeSalaryProcessor {
         System.out.println("Total Payroll: $" + totalPayroll);
         System.out.println("Average Salary: $" + String.format("%.2f", average));
     }
-
 }
+
