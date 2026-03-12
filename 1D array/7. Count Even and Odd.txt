@@ -10,5 +10,5 @@ int main() {
     }
     printf("Even:%d Odd:%d",even,odd);
 return 0;
-
 }
+
