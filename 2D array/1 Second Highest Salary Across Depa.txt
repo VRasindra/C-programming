@@ -1,4 +1,4 @@
-j1 Second Highest Salary Across Departments (2D Array)
+1 Second Highest Salary Across Departments (2D Array)
 #include <stdio.h>
 #include <limits.h>
 
